@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./mylogo.png" type="image/x-icon">
+    <title>خصائص HTML مع الشرح</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        direction: rtl;
+        text-align: right;
+        margin: 20px;
+        background-color: #171c26;
+        color: #fff;
+      }
+
+      h1,
+      h2 {
+        color: #fcb900;
+      }
+      p {
+        font-size: 18px;
+      }
+      .head{
+        width: 100%;
+        border-bottom: 1px solid #fcb900;
+      }
+      .head h1{
+        text-align: center;
+      }
+      .head p{
+        text-align: center;
+      }
+      code {
+        /* background: #FCB900; */
+        padding: 3px 5px;
+        border-radius: 5px;
+      }
+
+      .item{
+        position: relative;
+        padding: 3px 10px;
+        margin: 10px 0;
+      }
+      .item::before{
+        position: absolute;
+        content: '';
+        right: 0;
+        height: 100%;
+        width: 3px;
+        background-color: #fcb900;
+
+      }
+      .container_link{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .myLink{
+        background-color: #fcb900;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-top: 30px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 22px;
+      }
+      .myLink:hover{
+        background-color: #cf9904;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <h1>خصائص HTML مع الشرح</h1>
+        <p>
+          الخصائص (Attributes) في HTML تستخدم لإضافة معلومات إضافية إلى العناصر
+          وتحدد كيفية عملها.
+        </p>
+      </div>
+      <div class="item">
+        <h2>1. خاصية <code>href</code></h2>
+        <p>تستخدم في عنصر <code>&lt;a&gt;</code> لتحديد رابط الانتقال:</p>
+        <code>&lt;a href="https://example.com"&gt;زر الانتقال&lt;/a&gt;</code>
+      </div>
+      <div class="item">
+        <h2>2. خاصية <code>src</code></h2>
+        <p>تُستخدم في عنصر <code>&lt;img&gt;</code> لتحديد مسار الصورة:</p>
+        <code>&lt;img src="image.jpg" alt="صورة"&gt;</code>
+      </div>
+      <div class="item">
+        <h2>3. خاصية <code>alt</code></h2>
+        <p>تُستخدم في عنصر <code>&lt;img&gt;</code> لتوفير نص بديل للصورة:</p>
+        <code>&lt;img src="image.jpg" alt="وصف للصورة"&gt;</code>
+      </div>
+      <div class="item">
+        <h2>4. خاصية <code>title</code></h2>
+        <p>تعرض تلميحًا يظهر عند تمرير الفأرة فوق العنصر:</p>
+        <code>&lt;p title="هذه فقرة">مرر فوقي</code>
+      </div>
+      <div class="item">
+        <h2>5. خاصية <code>style</code></h2>
+        <p>تستخدم لإضافة تنسيقات CSS مباشرة إلى العنصر:</p>
+        <code
+          >&lt;p style="color: red; font-size: 20px;"&gt;نص باللون
+          الأحمر&lt;/p&gt;</code
+        >
+      </div>
+      <div class="item">
+        <h2>6. خاصية <code>id</code></h2>
+        <p>تُستخدم لإعطاء معرف فريد للعنصر:</p>
+        <code>&lt;div id="unique"&gt;محتوى&lt;/div&gt;</code>
+      </div>
+
+      <div class="item">
+        <h2>7. خاصية <code>class</code></h2>
+        <p>تُستخدم لتعيين فئة (class) للعنصر:</p>
+        <code>&lt;p class="text-bold"&gt;نص غامق&lt;/p&gt;</code>
+      </div>
+      <div class="item">
+        <h2>8. خاصية <code>disabled</code></h2>
+        <p>تعطّل زر أو حقل إدخال:</p>
+        <code>&lt;input type="text" disabled&gt;</code>
+      </div>
+      <div class="item">
+        <h2>9. خاصية <code>readonly</code></h2>
+        <p>تجعل حقل الإدخال غير قابل للتحرير:</p>
+        <code>&lt;input type="text" value="لا يمكن التعديل" readonly&gt;</code>
+      </div>
+      <div class="item">
+        <h2>10. خاصية <code>checked</code></h2>
+        <p>تجعل خيار التحديد مفعلاً بشكل افتراضي:</p>
+        <code>&lt;input type="checkbox" checked&gt;</code>
+      </div>
+      <div class="item">
+        <h2>11. خاصية <code>placeholder</code></h2>
+        <p>تعرض نصًا توضيحيًا داخل حقل الإدخال:</p>
+        <code>&lt;input type="text" placeholder="أدخل اسمك"&gt;</code>
+      </div>
+
+      <div class="item">
+        <h2>12. خاصية <code>required</code></h2>
+        <p>تجعل الحقل مطلوبًا قبل الإرسال:</p>
+        <code>&lt;input type="text" required&gt;</code>
+      </div>
+      <div class="item">
+        <h2>13. خاصية <code>maxlength</code></h2>
+        <p>تحدد الحد الأقصى لعدد الأحرف:</p>
+        <code>&lt;input type="text" maxlength="10"&gt;</code>
+      </div>
+      <div class="item">
+        <h2>14. خاصية <code>min</code> و <code>max</code></h2>
+        <p>تُستخدم مع الحقول العددية لتحديد القيم الدنيا والعليا:</p>
+        <code>&lt;input type="number" min="1" max="10"&gt;</code>
+      </div>
+      <div class="item">
+        <h2>15. خاصية <code>autocomplete</code></h2>
+        <p>تسمح للمتصفح بإكمال القيم تلقائيًا:</p>
+        <code>&lt;input type="text" autocomplete="on"&gt;</code>
+      </div>
+      <div class="container_link">
+          <a class="myLink" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes" target="_blank">اعرف اكتر عن html attributes</a>
+      </div>
+    </div>
+  </body>
+</html>

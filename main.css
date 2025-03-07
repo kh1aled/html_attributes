@@ -1,0 +1,13 @@
+body{
+    background: linear-gradient(to left , rgb(2, 2, 176) , rgb(2, 2, 119));
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+a{
+    color: white;
+    font-size: 40px;
+}
